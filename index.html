@@ -112,12 +112,6 @@
 
 <!-- ══════════ icon sprite ══════════ -->
 <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><defs>
-  <g id="i-bespoke"><path d="M3 21h18M6 21V11l6-4.5 6 4.5v10"/><path d="M10 21v-5h4v5"/><path d="m9 3 3-1.5L15 3"/></g>
-  <g id="i-commercial"><path d="M3 21h18M5 21V5h9v16M14 21V10h5v11"/><path d="M8 8h3M8 12h3M8 16h3M16.5 13v0M16.5 17v0"/></g>
-  <g id="i-industrial"><path d="M2 21h20M4 21V11l5 3.5V11l5 3.5V11l5 3.5V21"/><path d="M4 11 5 3h3l1 8"/></g>
-  <g id="i-develop"><path d="M3 21h18M6 21V8h5v13M11 21V4h7v17"/><path d="M14 8h1M14 12h1M14 16h1M8 12h1M8 16h1"/></g>
-  <g id="i-reno"><path d="M3 21h18M5 21V9l7-5 7 5v12"/><path d="m14.5 10.5-6 6M12 9l3 3M9 12l3 3"/></g>
-  <g id="i-civils"><path d="M2 20h20M4 20v-4M20 20v-4M4 16h16"/><path d="M6 16V9M12 16V6M18 16V9M4 9h16"/></g>
   <g id="i-quality"><path d="M12 2 4 5.5V11c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5.5Z"/><path d="m8.5 11.5 2.5 2.5 4.5-4.5"/></g>
   <g id="i-safety"><path d="M3 17h18M5 17v-3a7 7 0 0 1 14 0v3"/><path d="M10 7.5V4.5h4v3M3 17v2h18v-2"/></g>
   <g id="i-team"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1a6 6 0 0 1 12 0v1"/><path d="M16 5.5a3 3 0 0 1 0 5.8M18 20v-1a5 5 0 0 0-2.5-4.3"/></g>
@@ -205,7 +199,7 @@
 <section class="sec sec--about" id="about">
   <div class="wrap about">
     <div class="about__head">
-      <p class="kicker"><span class="kicker__rule"></span><span class="num">01</span>About us</p>
+      <p class="kicker"><span class="kicker__rule"></span>About us</p>
       <h2 class="h2">Building excellence.<br><span class="gold">Delivering quality.</span></h2>
     </div>
 
@@ -257,7 +251,7 @@
   <div class="wrap">
     <div class="sec__head">
       <div>
-        <p class="kicker"><span class="kicker__rule"></span><span class="num">02</span>What we do</p>
+        <p class="kicker"><span class="kicker__rule"></span>What we do</p>
         <h2 class="h2">We specialise in</h2>
       </div>
       <p class="sec__note">
@@ -268,40 +262,70 @@
 
     <ul class="svcs">
       <li class="svc" data-rise>
-        <span class="svc__n">01</span>
-        <svg class="svc__i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bespoke"/></svg>
-        <h3>Bespoke Construction Services</h3>
-        <p>One-off builds designed around a brief rather than a template — detailed, specified and executed to suit the site.</p>
+        <picture class="svc__img">
+          <source type="image/webp" srcset="assets/img/services/bespoke-400.webp 400w, assets/img/services/bespoke.webp 800w" sizes="(max-width:640px) 92vw, (max-width:900px) 46vw, 31vw">
+          <img src="assets/img/services/bespoke-400.jpg" alt="Curved timber staircase with lit treads in a double-volume entrance hall." width="800" height="450" loading="lazy" decoding="async">
+        </picture>
+        <div class="svc__body">
+          <span class="svc__n">01</span>
+          <h3>Bespoke Construction Services</h3>
+          <p>One-off builds designed around a brief rather than a template — detailed, specified and executed to suit the site.</p>
+        </div>
       </li>
       <li class="svc" data-rise data-rise-d="70">
-        <span class="svc__n">02</span>
-        <svg class="svc__i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-commercial"/></svg>
-        <h3>Commercial Construction</h3>
-        <p>Offices, retail and mixed-use developments delivered to programme, with the coordination a working commercial site demands.</p>
+        <picture class="svc__img">
+          <source type="image/webp" srcset="assets/img/services/commercial-400.webp 400w, assets/img/services/commercial.webp 800w" sizes="(max-width:640px) 92vw, (max-width:900px) 46vw, 31vw">
+          <img src="assets/img/services/commercial-400.jpg" alt="Modern glazed commercial office building lit at dusk." width="800" height="450" loading="lazy" decoding="async">
+        </picture>
+        <div class="svc__body">
+          <span class="svc__n">02</span>
+          <h3>Commercial Construction</h3>
+          <p>Offices, retail and mixed-use developments delivered to programme, with the coordination a working commercial site demands.</p>
+        </div>
       </li>
       <li class="svc" data-rise data-rise-d="140">
-        <span class="svc__n">03</span>
-        <svg class="svc__i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-industrial"/></svg>
-        <h3>Industrial Construction</h3>
-        <p>Warehousing, plant and industrial facilities — structures built for load, access and the way the building will actually be used.</p>
+        <picture class="svc__img">
+          <source type="image/webp" srcset="assets/img/services/industrial-400.webp 400w, assets/img/services/industrial.webp 800w" sizes="(max-width:640px) 92vw, (max-width:900px) 46vw, 31vw">
+          <img src="assets/img/services/industrial-400.jpg" alt="Structural steel frame of an industrial warehouse going up, with a crane alongside." width="800" height="450" loading="lazy" decoding="async">
+        </picture>
+        <div class="svc__body">
+          <span class="svc__n">03</span>
+          <h3>Industrial Construction</h3>
+          <p>Warehousing, plant and industrial facilities — structures built for load, access and the way the building will actually be used.</p>
+        </div>
       </li>
       <li class="svc" data-rise data-rise-d="210">
-        <span class="svc__n">04</span>
-        <svg class="svc__i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-develop"/></svg>
-        <h3>New Building Developments</h3>
-        <p>Ground-up developments taken from a cleared site through structure, envelope and finishes to a completed handover.</p>
+        <picture class="svc__img">
+          <source type="image/webp" srcset="assets/img/services/developments-400.webp 400w, assets/img/services/developments.webp 800w" sizes="(max-width:640px) 92vw, (max-width:900px) 46vw, 31vw">
+          <img src="assets/img/services/developments-400.jpg" alt="A row of new double-storey homes under construction on an estate development." width="800" height="450" loading="lazy" decoding="async">
+        </picture>
+        <div class="svc__body">
+          <span class="svc__n">04</span>
+          <h3>New Building Developments</h3>
+          <p>Ground-up developments taken from a cleared site through structure, envelope and finishes to a completed handover.</p>
+        </div>
       </li>
       <li class="svc" data-rise data-rise-d="280">
-        <span class="svc__n">05</span>
-        <svg class="svc__i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-reno"/></svg>
-        <h3>Renovations &amp; Alterations</h3>
-        <p>Reworking what already stands — extensions, conversions and upgrades carried out around an existing structure.</p>
+        <picture class="svc__img">
+          <source type="image/webp" srcset="assets/img/services/renovations-400.webp 400w, assets/img/services/renovations.webp 800w" sizes="(max-width:640px) 92vw, (max-width:900px) 46vw, 31vw">
+          <img src="assets/img/services/renovations-400.jpg" alt="Refitted kitchen with a stone-topped island and new joinery." width="800" height="450" loading="lazy" decoding="async">
+        </picture>
+        <div class="svc__body">
+          <span class="svc__n">05</span>
+          <h3>Renovations &amp; Alterations</h3>
+          <p>Reworking what already stands — extensions, conversions and upgrades carried out around an existing structure.</p>
+        </div>
       </li>
       <li class="svc" data-rise data-rise-d="350">
-        <span class="svc__n">06</span>
-        <svg class="svc__i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-civils"/></svg>
-        <h3>Civil Construction Solutions</h3>
-        <p>Earthworks, foundations, surface beds, retaining and the civil work a building sits on before anything goes up.</p>
+        <picture class="svc__img">
+          <source type="image/webp" srcset="assets/img/services/civils-400.webp 400w, assets/img/services/civils.webp 800w" sizes="(max-width:640px) 92vw, (max-width:900px) 46vw, 31vw">
+          <img src="assets/img/services/civils-400.jpg" alt="Concrete boom pump placing concrete on a sloped site with the crew in position." width="800" height="450" loading="lazy" decoding="async">
+        </picture>
+        <div class="svc__body">
+          <span class="svc__n">06</span>
+          <h3>Civil Construction Solutions</h3>
+          <p>Earthworks, foundations, surface beds, retaining and the civil work a building sits on before anything goes up.</p>
+        </div>
       </li>
     </ul>
   </div>
@@ -311,7 +335,7 @@
 <section class="sec sec--approach" id="approach">
   <div class="wrap approach">
     <div class="approach__head">
-      <p class="kicker"><span class="kicker__rule"></span><span class="num">03</span>How we work</p>
+      <p class="kicker"><span class="kicker__rule"></span>How we work</p>
       <h2 class="h2">A build you can<br><span class="gold">follow from the start.</span></h2>
       <p class="sec__note">
         The same four stages on every project, whether it's a single bespoke home or an
@@ -350,7 +374,7 @@
   <div class="wrap">
     <div class="sec__head">
       <div>
-        <p class="kicker"><span class="kicker__rule"></span><span class="num">04</span>Our work</p>
+        <p class="kicker"><span class="kicker__rule"></span>Our work</p>
         <h2 class="h2">Recent projects</h2>
       </div>
       <p class="sec__note">
@@ -536,7 +560,7 @@
 <section class="sec sec--contact" id="contact">
   <div class="wrap contact">
     <div class="contact__info">
-      <p class="kicker"><span class="kicker__rule"></span><span class="num">05</span>Get in touch</p>
+      <p class="kicker"><span class="kicker__rule"></span>Get in touch</p>
       <h2 class="h2">Start the<br><span class="gold">conversation.</span></h2>
       <p class="sec__note">
         Tell us about the project and we'll come back to you. For anything urgent,
