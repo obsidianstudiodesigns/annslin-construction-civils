@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Let every crawler reach the assets — Google needs the CSS, JS and images
+# to render the page and to pick up the favicon and logo.
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+
+Sitemap: https://obsidianstudiodesigns.github.io/annslin-construction-civils/sitemap.xml

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/estate-homes.jpg</image:loc>
+      <image:title>Residential estate development</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/staircase-atrium.jpg</image:loc>
+      <image:title>Feature staircase and double volume</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/foundation-surface-bed.jpg</image:loc>
+      <image:title>Foundations and surface bed</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/concrete-pour.jpg</image:loc>
+      <image:title>Concrete pour</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/superstructure.jpg</image:loc>
+      <image:title>Face brick superstructure</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/kitchen-island.jpg</image:loc>
+      <image:title>Kitchen and island</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/marble-bathroom.jpg</image:loc>
+      <image:title>Main en-suite</image:title>
+    </image:image>
+  </url>
+</urlset>
