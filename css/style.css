@@ -487,11 +487,16 @@ svg use{ fill:none; stroke:currentColor; stroke-width:1.6;
 
 .ftr__base{
   border-top:1px solid var(--line); padding-block:1.5rem;
-  display:grid; gap:.4rem; color:var(--muted); font-size:.78rem;
+  display:grid; gap:.45rem; color:var(--muted); font-size:.78rem;
 }
-.ftr__base p:last-child{
+.ftr__tag{
   font-family:var(--display); letter-spacing:.14em; text-transform:uppercase; font-size:.72rem;
 }
+.ftr__by a{
+  color:var(--text-2); border-bottom:1px solid var(--line-2);
+  padding-bottom:1px; transition:color .25s, border-color .25s;
+}
+.ftr__by a:hover{ color:var(--gold); border-color:var(--gold); }
 
 /* ══════════════════ lightbox ══════════════════ */
 .lb{
@@ -557,8 +562,11 @@ svg use{ fill:none; stroke:currentColor; stroke-width:1.6;
   .hero__stats li:last-child{ grid-column:1 / -1; }
   .pillars{ grid-template-columns:repeat(2,1fr); }
   .f2{ grid-template-columns:1fr 1fr; gap:0 1rem; }
-  .ftr__base{ grid-template-columns:1fr auto; align-items:center; }
-  .ftr__base p:last-child{ text-align:right; }
+  /* row 1: copyright | tagline.  row 2: the studio credit. */
+  .ftr__base{ grid-template-columns:1fr auto; align-items:center; column-gap:1.5rem; }
+  .ftr__copy{ grid-column:1; grid-row:1; }
+  .ftr__tag { grid-column:2; grid-row:1; text-align:right; }
+  .ftr__by  { grid-column:1 / -1; grid-row:2; }
 }
 
 /* ── ≥640px: gallery goes two-up ────────────────────────────────────────── */
