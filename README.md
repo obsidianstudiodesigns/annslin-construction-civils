@@ -11,7 +11,8 @@ index.html          the whole page
 css/style.css       mobile-first; every breakpoint is min-width
 js/main.js          nav, reveals, counters, filters, lightbox, quote form
 assets/img/         logo, icons, OG image
-assets/img/work/    15 project photos (webp + jpg, 800w and full)
+assets/img/work/    26 project photos (webp + jpg, 800w and full)
+assets/img/services/ 6 service-card photos (webp + jpg, 16:9)
 assets/video/       hero video, desktop + mobile cuts, with posters
 robots.txt  sitemap.xml  site.webmanifest  favicon.ico
 ```
@@ -81,14 +82,26 @@ Also present: canonical URL, Open Graph and Twitter cards with a 1200×630 image
   cropped frames. Sampled frames across both outputs were checked and the
   watermark is gone.
 
-- **Project photos.** Exported to webp with a jpg fallback at two widths (800w
-  and up to 1600w) and served through `<picture>` + `srcset`. EXIF is stripped.
+- **Project photos.** 26 of the 39 images in `Our Work/` are used. Exported to
+  webp with a jpg fallback at two widths (800w and up to 1600w) and served
+  through `<picture>` + `srcset`. EXIF orientation is applied, then stripped.
 
-- **One photo was left out.** The supplied `634159023_…jpg` is an AI-generated
-  image whose site board reads "ANNSLIN PROPERTIES" in malformed, garbled
-  lettering. On a page selling attention to detail it undercuts the other 15,
-  which are real site photographs. Drop it in if you disagree — it's still in
-  `Our Work/`.
+  The 13 left out are near-duplicates of ones already shown (second angles of
+  the same shopfront, slab, stack or dressing room) — the gallery reads better
+  without them. They are all still in `Our Work/` if you want to swap any in;
+  the build table lives in the project notes and is keyed by filename order.
+
+- **Two images were deliberately excluded.** The aerial "house from above" and
+  the garden-side house view are 3D architectural **renders**, not photographs
+  of built work. Everything in the gallery is presented as completed or
+  in-progress Annslin work, so a render would misrepresent it. If the client
+  wants them shown, they should sit in a separate "design visualisation" strip
+  rather than in Recent Projects.
+
+- **Service-card photos.** All six now come from `Our Work/`. Earlier versions
+  of the commercial and industrial cards borrowed images from the flyer because
+  the old photo set was entirely residential; the new set covers both, so no
+  flyer stock is used anywhere on the site.
 
 ## The mobile hero video
 

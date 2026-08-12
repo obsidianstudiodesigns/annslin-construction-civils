@@ -3,35 +3,47 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/estate-homes.jpg</image:loc>
-      <image:title>Residential estate development</image:title>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/cielo-centre.jpg</image:loc>
+      <image:title>Cielo retail centre</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/staircase-atrium.jpg</image:loc>
-      <image:title>Feature staircase and double volume</image:title>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/incanda-showroom.jpg</image:loc>
+      <image:title>Incanda showroom, George</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/foundation-surface-bed.jpg</image:loc>
-      <image:title>Foundations and surface bed</image:title>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/retail-canopy.jpg</image:loc>
+      <image:title>Retail frontage & canopy</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/interior-fitout.jpg</image:loc>
+      <image:title>Commercial fit-out</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/home-complete.jpg</image:loc>
+      <image:title>Completed residence</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/roof-structure.jpg</image:loc>
+      <image:title>Timber roof structure</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/site-earthworks.jpg</image:loc>
+      <image:title>Site earthworks</image:title>
     </image:image>
     <image:image>
       <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/concrete-pour.jpg</image:loc>
       <image:title>Concrete pour</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/superstructure.jpg</image:loc>
-      <image:title>Face brick superstructure</image:title>
-    </image:image>
-    <image:image>
       <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/kitchen-island.jpg</image:loc>
-      <image:title>Kitchen and island</image:title>
+      <image:title>Kitchen & island</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/marble-bathroom.jpg</image:loc>
+      <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/main-ensuite.jpg</image:loc>
       <image:title>Main en-suite</image:title>
     </image:image>
   </url>
