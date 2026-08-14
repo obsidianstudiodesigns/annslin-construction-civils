@@ -16,7 +16,7 @@ contact.html        contact details and the quote form
 css/style.css       mobile-first; every breakpoint is min-width
 js/main.js          nav, reveals, counters, filters, lightbox, quote form
 assets/img/         logo, icons, OG image
-assets/img/work/    26 project photos (webp + jpg, 800w and full)
+assets/img/work/    41 project photos (webp + jpg, 800w and full)
 assets/img/services/ 6 service-card photos (webp + jpg, 16:9)
 assets/video/       hero video, desktop + mobile cuts, with posters
 robots.txt  sitemap.xml  site.webmanifest  favicon.ico
@@ -110,21 +110,32 @@ Also present: canonical URL, Open Graph and Twitter cards with a 1200×630 image
   cropped frames. Sampled frames across both outputs were checked and the
   watermark is gone.
 
-- **Project photos.** 26 of the 39 images in `Our Work/` are used. Exported to
-  webp with a jpg fallback at two widths (800w and up to 1600w) and served
-  through `<picture>` + `srcset`. EXIF orientation is applied, then stripped.
+- **Project photos.** 41 of the 62 images in `Our Work/` are published — 16
+  commercial and industrial, 14 new builds, 5 structure and civils, 6 interiors.
+  Exported to webp with a jpg fallback at two widths (800w and up to 1600w) and
+  served through `<picture>` + `srcset`. EXIF orientation is applied, then
+  stripped.
 
-  The 13 left out are near-duplicates of ones already shown (second angles of
-  the same shopfront, slab, stack or dressing room) — the gallery reads better
-  without them. They are all still in `Our Work/` if you want to swap any in;
-  the build table lives in the project notes and is keyed by filename order.
+  The build table is **keyed by filename**, not by position in the folder. The
+  client adds photos in batches and the sort order shifts every time, so an
+  index-based table silently remaps every caption. Do not change this.
 
-- **Two images were deliberately excluded.** The aerial "house from above" and
-  the garden-side house view are 3D architectural **renders**, not photographs
-  of built work. Everything in the gallery is presented as completed or
-  in-progress Annslin work, so a render would misrepresent it. If the client
-  wants them shown, they should sit in a separate "design visualisation" strip
-  rather than in Recent Projects.
+  The 18 not published are near-duplicates of shots already in the gallery
+  (second angles of the same warehouse, showroom, slab, stack or dressing
+  room). They are all still in `Our Work/` if you want to swap any in.
+
+- **Three images are deliberately excluded, and should stay excluded:**
+
+  | File | Why |
+  |---|---|
+  | `…11.39.13.jpeg` | An **Alamy-watermarked stock photo** — a "project management" infographic. It is not Annslin's work and it is not licensed. Publishing it would be copyright infringement. |
+  | `…11.39.34 (1).jpeg` | 3D architectural **render**, not a photograph of built work |
+  | `…11.39.38.jpeg` | 3D architectural **render**, not a photograph of built work |
+
+  Everything in Recent Projects is presented as completed or in-progress Annslin
+  work, so a render would misrepresent it. If the client wants the renders
+  shown, they belong in a separate "design visualisation" strip. The stock
+  image should not go on the site at all.
 
 - **Service-card photos.** All six now come from `Our Work/`. Earlier versions
   of the commercial and industrial cards borrowed images from the flyer because
