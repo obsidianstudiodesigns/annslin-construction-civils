@@ -6,6 +6,18 @@
     <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/services.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/work.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/cielo-centre.jpg</image:loc>
       <image:title>Cielo retail centre</image:title>
@@ -16,7 +28,7 @@
     </image:image>
     <image:image>
       <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/retail-canopy.jpg</image:loc>
-      <image:title>Retail frontage & canopy</image:title>
+      <image:title>Retail frontage and canopy</image:title>
     </image:image>
     <image:image>
       <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/interior-fitout.jpg</image:loc>
@@ -40,11 +52,29 @@
     </image:image>
     <image:image>
       <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/kitchen-island.jpg</image:loc>
-      <image:title>Kitchen & island</image:title>
+      <image:title>Kitchen and island</image:title>
     </image:image>
     <image:image>
       <image:loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/assets/img/work/main-ensuite.jpg</image:loc>
       <image:title>Main en-suite</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/about.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/approach.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://obsidianstudiodesigns.github.io/annslin-construction-civils/contact.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

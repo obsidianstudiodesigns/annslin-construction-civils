@@ -166,29 +166,15 @@
     nums.forEach(function (n) { io.observe(n); });
   }());
 
-  /* ─────────────────────────── active nav link ─────────────────────────── */
+  /* ─────────────────────────── active nav link ───────────────────────────
+     The server-rendered markup already carries .is-active for the current
+     page. This only covers the case where the URL reaches a page by a path
+     the markup could not predict (a trailing "/" or "/index.html").        */
   (function activeLink () {
-    var links = Array.prototype.slice.call(doc.querySelectorAll('.nav a[href^="#"]'));
-    if (!links.length || !('IntersectionObserver' in window)) return;
-
-    var map = {};
-    links.forEach(function (a) {
-      var s = doc.querySelector(a.getAttribute('href'));
-      if (s) map[s.id] = a;
-    });
-
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        var a = map[e.target.id];
-        if (!a) return;
-        if (e.isIntersecting) {
-          links.forEach(function (l) { l.classList.remove('is-active'); });
-          a.classList.add('is-active');
-        }
-      });
-    }, { rootMargin: '-45% 0px -50% 0px' });
-
-    Object.keys(map).forEach(function (id) { io.observe(doc.getElementById(id)); });
+    var here = window.location.pathname.split('/').pop() || 'index.html';
+    if (doc.querySelector('.nav a.is-active')) return;
+    var link = doc.querySelector('.nav a[href="' + here + '"]');
+    if (link) { link.classList.add('is-active'); link.setAttribute('aria-current', 'page'); }
   }());
 
   /* ─────────────────────────── gallery filters ─────────────────────────── */

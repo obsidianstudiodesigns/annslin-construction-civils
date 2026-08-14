@@ -6,7 +6,12 @@ Static site. No build step, no framework, no database. GitHub Pages serves it
 from `main` at the repository root — pushing to `main` redeploys it.
 
 ```
-index.html          the whole page
+index.html          landing page — hero, service areas, teasers
+about.html          who we are, stats, pillars
+services.html       the six disciplines in full
+approach.html       the four project stages
+work.html           the full gallery, filters + lightbox
+contact.html        contact details and the quote form
 404.html
 css/style.css       mobile-first; every breakpoint is min-width
 js/main.js          nav, reveals, counters, filters, lightbox, quote form
@@ -17,13 +22,36 @@ assets/video/       hero video, desktop + mobile cuts, with posters
 robots.txt  sitemap.xml  site.webmanifest  favicon.ico
 ```
 
+## Page structure
+
+Six real pages, not a one-page scroller — the nav navigates rather than jumping
+to anchors. Each page carries its own `<title>`, meta description, canonical,
+Open Graph tags and `BreadcrumbList` JSON-LD; the home page additionally carries
+the `Organization` / `GeneralContractor` / `WebSite` graph.
+
+The header, footer, CTA band and gallery markup are **generated from one table**
+rather than copied between files, so the six pages cannot drift apart. The
+generator lives with the project notes, not in the repo — the committed HTML is
+the deliverable. If you hand-edit the shared chrome, change it in all six files.
+
+The active nav item is marked server-side (`class="is-active"` plus
+`aria-current="page"`), so it is correct before JavaScript runs.
+
+The landing page deliberately repeats only *short* versions of the About and
+Services copy, with the full text living on the sub-pages, so the site does not
+compete with itself in search for the same content.
+
 ## Before this goes to the client
 
 **The canonical URL is currently the GitHub Pages address.** If the site moves to
 a real domain (the client's email suggests `annslin-construction.co.za`), search
 and replace `https://obsidianstudiodesigns.github.io/annslin-construction-civils/`
-across `index.html`, `robots.txt` and `sitemap.xml`. It appears in the canonical
-tag, the Open Graph tags, the JSON-LD and the sitemap.
+across all six HTML files, `robots.txt` and `sitemap.xml`. It appears in the
+canonical tags, the Open Graph tags, the JSON-LD and the sitemap.
+
+**Service areas** — Eastern Cape, Western Cape and Cape Town — appear in the
+banner under the hero, in the footer, in the About copy, on the contact page and
+in the `areaServed` block of the JSON-LD.
 
 **No social links are in the footer** because none were supplied. If the client
 has Facebook/Instagram, add them to the footer and to `sameAs` in the JSON-LD —

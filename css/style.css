@@ -253,6 +253,72 @@ svg use{ fill:none; stroke:currentColor; stroke-width:1.6;
   display:block; margin-top:.35rem; color:var(--muted);
   font-size:.775rem; letter-spacing:.11em; text-transform:uppercase;
 }
+/* same strip, but sitting inside a wrap rather than bleeding to the edges */
+.hero__stats--flat{ border:1px solid var(--line); margin-top:clamp(2.5rem,6vw,4rem); }
+.hero__stats--flat li{ background:var(--ink-2); backdrop-filter:none; padding-inline:1.5rem; }
+
+/* ══════════════════ service areas banner ══════════════════ */
+.areas{
+  background:
+    radial-gradient(120% 190% at 50% 0%, rgba(200,153,107,.14), transparent 66%),
+    var(--panel);
+  border-block:1px solid var(--line);
+  position:relative;
+}
+.areas::before,.areas::after{
+  content:''; position:absolute; left:0; right:0; height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold-dk) 22%,var(--gold) 50%,var(--gold-dk) 78%,transparent);
+  opacity:.55;
+}
+.areas::before{ top:-1px; } .areas::after{ bottom:-1px; }
+
+.areas__in{ padding-block:1.4rem; display:grid; gap:.9rem; justify-items:center; text-align:center; }
+.areas__lbl{
+  display:flex; align-items:center; gap:.5rem;
+  font-family:var(--display); font-weight:500; font-size:.7rem;
+  letter-spacing:.24em; text-transform:uppercase; color:var(--muted);
+}
+.areas__lbl svg{ width:15px; height:15px; color:var(--gold); }
+
+.areas__list{ display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:.55rem 1.4rem; }
+.areas__list li{
+  position:relative;
+  font-family:var(--display); font-weight:500;
+  font-size:clamp(1rem,.9rem + .55vw,1.35rem);
+  letter-spacing:.09em; text-transform:uppercase; color:var(--text);
+  white-space:nowrap;
+}
+.areas__list li + li::before{      /* gold diamond between areas */
+  content:''; position:absolute; left:-.78rem; top:50%;
+  width:5px; height:5px; margin-top:-2.5px;
+  background:var(--gold); transform:rotate(45deg);
+}
+
+/* ══════════════════ page header (sub-pages) ══════════════════ */
+.phero{
+  position:relative; isolation:isolate; overflow:hidden;
+  background:var(--ink-2); border-bottom:1px solid var(--line);
+  padding-block:clamp(7rem,16vw,10.5rem) clamp(2.75rem,6vw,4rem);
+}
+.phero__veil{
+  position:absolute; inset:0; z-index:-1;
+  background:
+    radial-gradient(90% 130% at 82% 0%, rgba(200,153,107,.2), transparent 60%),
+    radial-gradient(70% 100% at 8% 100%, rgba(200,153,107,.09), transparent 60%);
+}
+.phero__veil::after{
+  content:''; position:absolute; inset:0; opacity:.4; mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.34'/%3E%3C/svg%3E");
+}
+.phero__h1{
+  font-family:var(--display); font-weight:600; text-transform:uppercase;
+  font-size:clamp(2.1rem,1.4rem + 3.6vw,4.25rem);
+  line-height:1.02; letter-spacing:-.014em; margin-bottom:1.1rem;
+}
+.phero__lede{ color:var(--text-2); max-width:56ch; font-size:clamp(1rem,.95rem + .3vw,1.13rem); }
+
+/* ══════════════════ section footer link ══════════════════ */
+.sec__more{ margin-top:clamp(2rem,4.5vw,3rem); display:flex; justify-content:center; }
 
 /* ══════════════════ about ══════════════════ */
 .sec--about{ background:var(--ink); }
@@ -306,6 +372,19 @@ svg use{ fill:none; stroke:currentColor; stroke-width:1.6;
 }
 
 .svc__body{ position:relative; padding:1.5rem 1.6rem 2rem; }
+
+/* compact variant — the whole card is a link through to the services page */
+.svc--compact{ padding:0; }
+.svc__link{ display:flex; flex-direction:column; height:100%; }
+.svc--compact .svc__body{ display:flex; flex-direction:column; flex:1; }
+.svc__go{
+  display:inline-flex; align-items:center; gap:.5rem; margin-top:auto; padding-top:1rem;
+  font-family:var(--display); font-weight:500; font-size:.76rem;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--gold);
+  transition:gap var(--t);
+}
+.svc__go svg{ width:16px; height:16px; }
+.svc--compact:hover .svc__go{ gap:.9rem; }
 .svc__n{
   display:block; font-family:var(--display); font-weight:500; font-size:.78rem;
   letter-spacing:.16em; color:var(--gold-dk); margin-bottom:.6rem;
@@ -482,6 +561,7 @@ svg use{ fill:none; stroke:currentColor; stroke-width:1.6;
   letter-spacing:.2em; text-transform:uppercase; color:var(--text); margin-bottom:.35rem;
 }
 .ftr__nav a,.ftr__nav span{ color:var(--muted); font-size:.88rem; overflow-wrap:anywhere; }
+.ftr__areas{ color:var(--gold-dk) !important; margin-top:.35rem; }
 .ftr__nav a{ transition:color .25s; padding-block:.35rem; }
 .ftr__nav a:hover{ color:var(--gold); }
 
