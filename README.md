@@ -16,7 +16,7 @@ contact.html        contact details and the quote form
 css/style.css       mobile-first; every breakpoint is min-width
 js/main.js          nav, reveals, counters, filters, lightbox, quote form
 assets/img/         logo, icons, OG image
-assets/img/work/    41 project photos (webp + jpg, 800w and full)
+assets/img/work/    59 project photos (webp + jpg, 800w and full)
 assets/img/services/ 6 service-card photos (webp + jpg, 16:9)
 assets/video/       hero video, desktop + mobile cuts, with posters
 robots.txt  sitemap.xml  site.webmanifest  favicon.ico
@@ -110,32 +110,41 @@ Also present: canonical URL, Open Graph and Twitter cards with a 1200×630 image
   cropped frames. Sampled frames across both outputs were checked and the
   watermark is gone.
 
-- **Project photos.** 41 of the 62 images in `Our Work/` are published — 16
-  commercial and industrial, 14 new builds, 5 structure and civils, 6 interiors.
+- **Project photos.** 59 of the 103 images in `Our Work/` are published — 14
+  commercial, 15 industrial, 16 residential, 8 structure and civils, 6 interiors.
   Exported to webp with a jpg fallback at two widths (800w and up to 1600w) and
   served through `<picture>` + `srcset`. EXIF orientation is applied, then
   stripped.
 
-  The build table is **keyed by filename**, not by position in the folder. The
-  client adds photos in batches and the sort order shifts every time, so an
+  The build table is **keyed by path relative to `Our Work/`**, not by position
+  in the folder. The client adds photos in batches and now in subfolders, so an
   index-based table silently remaps every caption. Do not change this.
 
-  The 18 not published are near-duplicates of shots already in the gallery
-  (second angles of the same warehouse, showroom, slab, stack or dressing
-  room). They are all still in `Our Work/` if you want to swap any in.
+  **Gallery filters follow the client's own filing** — they organise their work
+  as commercial / industrial / residential, and the subfolders in `Our Work/`
+  are named that way, so the filters match. Two discipline buckets (structure &
+  civils, interiors & finishes) carry work that isn't tied to a visible sector.
+  Note the industrial subfolder is spelled `inbdustrial` on disk; the build
+  reads it as-is rather than renaming the client's folder.
 
-- **Three images are deliberately excluded, and should stay excluded:**
+  The 38 not published are near-duplicate angles of shots already in the
+  gallery. They are all still in `Our Work/` if you want to swap any in.
+
+- **Six images are deliberately excluded, and should stay excluded:**
 
   | File | Why |
   |---|---|
-  | `…11.39.13.jpeg` | An **Alamy-watermarked stock photo** — a "project management" infographic. It is not Annslin's work and it is not licensed. Publishing it would be copyright infringement. |
-  | `…11.39.34 (1).jpeg` | 3D architectural **render**, not a photograph of built work |
-  | `…11.39.38.jpeg` | 3D architectural **render**, not a photograph of built work |
+  | `…11.39.13.jpeg` | An **Alamy-watermarked stock photo** — a "project management" infographic. Not Annslin's work and not licensed; publishing it would be copyright infringement. |
+  | `…11.39.34 (1).jpeg` | 3D architectural **render** |
+  | `…11.39.38.jpeg` | 3D architectural **render** |
+  | `…11.39.37 (1).jpeg` | 3D architectural **render** — this one was published as "Entrance & driveway" until it was spotted and pulled |
+  | `residential/…16.58.09.jpeg` | The same render, supplied again |
+  | `residential/…16.58.09 (1).jpeg` | 3D architectural **render** |
 
   Everything in Recent Projects is presented as completed or in-progress Annslin
-  work, so a render would misrepresent it. If the client wants the renders
-  shown, they belong in a separate "design visualisation" strip. The stock
-  image should not go on the site at all.
+  work, so a render misrepresents it. Renders are easy to miss at thumbnail
+  size — check new batches at full size before publishing. If the client wants
+  them shown, they belong in a separate "design visualisation" strip.
 
 - **Service-card photos.** All six now come from `Our Work/`. Earlier versions
   of the commercial and industrial cards borrowed images from the flyer because
